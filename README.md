@@ -2,22 +2,20 @@
 
 #### 安装
 ```
-composer require 
+aaronwb/laravel-weidian-sdk
 ```
 
 #### 配置
 * 在 config/app.php 注册 ServiceProvider 和 Facade (Laravel 5.5 + 无需手动注册)
 ```php
 'providers' => [
-    // ...
-],
-'aliases' => [
-    // ...
-],
+    WeidianServiceProvider::class,
+
+]
 ```
 * 发布配置文件
 ```
-php artisan vendor:publish --provider=""
+php artisan vendor:publish --provider="WeidianServiceProvider::class"
 ```
 * 修改配置文件中的参数
 
