@@ -1,0 +1,13 @@
+{
+    "name": "aaronwb/weidian",
+    "description": "微店sdk for laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "AaronW",
+            "email": "zmtzwb@gmail.com"
+        }
+    ],
+    "require": {},
+    "version": "0.1.0"
+}
