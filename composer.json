@@ -1,5 +1,5 @@
 {
-    "name": "aaronwb/weidian",
+    "name": "aaronwb/laravel-weidian-sdk",
     "description": "微店sdk for laravel",
     "type": "library",
     "authors": [
