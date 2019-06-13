@@ -119,6 +119,10 @@ class Client
     }
 
 
+    /**
+     * @return string|null
+     * @throws \Exception
+     */
     public function send()
     {
         $client = new \GuzzleHttp\Client();
@@ -133,8 +137,8 @@ class Client
                     if ($contentArr['status']['status_code'] == 0) {
                         return $contentArr['result'];
                     }
+                    throw new \Exception(json_encode($contentArr));
                 }
-                return $content;
             }
             return null;
         } catch (GuzzleException $e) {
